@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bai 10 JavaScript</title>
+</head>
+<body>
+	<h3>JSFunction</h3>
+	<p id="sum"></p>
+	<p id="person"></p>
+	<script type="text/javascript">
+		
+		// Hàm trong JavaScript
+		/*
+			function functionName(parameters list) {
+				// function body;
+			}
+		*/
+
+		var a = 100;
+		var b = 255;
+
+		var sum = sumOfAAndB(a, b);
+
+		function sumOfAAndB(a, b) {
+			var x = a + b;
+			return x;
+		}
+
+		// tong day so tu start-> end:
+		function sumOfArray(start, end) {
+			var s = 0;
+			for (var i = start; i <= end; i++) {
+				s += i;
+			}
+			return s; // ket qua
+		}
+
+		function sayHello(message, name) {
+			var msg = message + " " + name + "!";
+			return msg;
+		}
+
+		var ms = "Good morning";
+		var ms2 = "Good night";
+		var person = "Nguyen Van A";
+		var person2 = "Tran Thi C";
+
+		document.getElementById("sum").innerHTML = sayHello;
+		document.getElementById("person").innerHTML = sayHello(ms2, person2);
+	</script>
+</body>
+</html>
