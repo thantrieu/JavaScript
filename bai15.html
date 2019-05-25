@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bai 15 JavaScript</title>
+</head>
+<body>
+  <p id="demo"></p>
+  <script type="text/javascript">
+  	// String methods
+
+    var brands = "Apple oPPo Samsung Oppo Xiaomi Huawei oppo Bphone Oppo";
+    
+  	// document.getElementById("demo").innerHTML = brands.toUpperCase(); // viet hoa toan bo string
+    // document.getElementById("demo").innerHTML = brands.toLowerCase(); // viet thuong toan bo string
+    // document.getElementById("demo").innerHTML = brands.indexOf("Oppo", 15); // tim tu trai sang phai
+    // document.getElementById("demo").innerHTML = brands.lastIndexOf("Oppo"); // tim tu phai sang trai
+    // var arr = brands.split(' '); // tach thanh mang cac phan tu theo dau hieu cho truoc
+    // document.getElementById("demo").innerHTML = arr + ", type: " + typeof arr; // 
+    // document.getElementById("demo").innerHTML = brands.length + "<br>" + brands.trim().length; // loai bo khoang trang dau va cuoi chuoi
+    document.getElementById("demo").innerHTML = brands.replace(/Oppo/i, "Google"); // thay the replace(old, new)
+
+  </script>
+</body>
+</html>

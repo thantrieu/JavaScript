@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bai 18 JavaScript</title>
+</head>
+<body>
+  <p id="demo"></p>
+  <script type="text/javascript">
+  	// Constructor
+    var w = "123";
+    var x = 123;
+    var s = "125632";
+    var arr = [];
+
+    var person = {
+      firstName: "Than",
+      lastName: "Trieu",
+      age: 25,
+      fullName: function(){
+        return this.firstName + " " + this.lastName;
+      }
+    }
+
+    function Person(first, last, age, addr) {
+      this.firstName = first;
+      this.lastName = last;
+      this.age = age;
+      this.address = addr;
+      this.fullName = function() {
+        return this.firstName + " " + this.lastName;
+      }
+      this.smile = function() {
+        return "Hahaha!!!";
+      }
+    }
+
+    var p1 = new Person("Hoang", "Nguyen", 20, "Hanoi");
+    var p2 = new Person("Hung", "Tran", 21);
+
+    p1.eat = function(){
+      return "Soap soap soap...";
+    }
+
+    document.getElementById("demo").innerHTML = p2.address;
+
+  </script>
+</body>
+</html>

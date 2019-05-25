@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bài 19 Array</title>
+</head>
+<body>
+  <p id="demo"></p>
+  <script type="text/javascript">
+  	/* 
+      0. Định nghĩa mảng
+      1. Cú pháp tổng quát
+      2. Truy cập mảng
+      3. Nhận diện một biến có phải là mảng hay không
+    */
+
+    var person = {
+      firstName: "",
+      lastName: ""
+      //....
+    }
+
+    person.firstName;
+
+    // tong quat:
+    // array_name = [element1, element2, ...];
+
+    var friends = ["Hoang", "Dong", "Nhung", "Hoa", "Trung", "Khoa"];
+
+    var len = friends.length;
+
+    friends[1] = "Jully";
+
+    document.getElementById("demo").innerHTML = friends instanceof Array; //Array.isArray(friends);
+
+  </script>
+</body>
+</html>

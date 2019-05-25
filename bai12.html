@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bai 12 JavaScript</title>
+</head>
+<body>
+  <p id="demo"></p>
+  <script type="text/javascript">
+  	// Object's Properties
+
+  	var person = {
+  		firstName: "Than",
+  		lastName: "Trieu",
+  		age: 25,
+  	}
+
+  	person.fullName = person.firstName + ' ' + person.lastName;
+  	person.gender = "Male";
+
+  	delete person.age;
+  	delete person.gender;
+
+  	var x = 'lastName';
+  	var a = 'age';
+  	document.getElementById("demo").innerHTML = person.fullName + ', ' + person[a] + ', ' + person.gender;
+
+  </script>
+</body>
+</html>

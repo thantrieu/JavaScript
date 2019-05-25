@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Bài 20 Array Methods</title>
+</head>
+<body>
+  <p id="demo"></p>
+  <script type="text/javascript">
+  	/* 
+      0. push(element): thêm một p.tử vào cuối mảng
+      1. pop()        : xóa phần tử ở cuối mảng
+      2. shift()      : xóa phần tử đầu mảng
+      3. unshift(element): thêm phần tử vào đầu mảng
+      4. splice(index, num, ...) : thêm hoặc xóa num phần tử từ vị trí index
+      5. concat()     : nối hai mảng
+      6. slice(start, to): trích xuất mảng
+      7. join(delim)  : Nối các phần tử của mảng phân tách bởi delim
+      8. toString()   : trả về danh sách các phần tử mảng ở kiểu string
+    */
+
+    var friends = ["Hoang", "Dong", "Nhung", "Hoa", "Trung", "Khoa"];
+
+    var cats = ["Meow", "Joaha", "Tom"];
+
+    var otherFriends = friends.slice(2, 4);
+
+    document.getElementById("demo").innerHTML = typeof friends;
+
+  </script>
+</body>
+</html>
