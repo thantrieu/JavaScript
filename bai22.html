@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Bài 22 Các phương thức lặp trên mảng</title>
+</head>
+<body>
+  <p id="demo"></p>
+  <script type="text/javascript">
+  	/* 
+      0. find(): trả về giá trị đầu tiên trong các phần tử mảng thỏa mãn điều kiện cho trước
+      1. findIndex(): trả về chỉ số phần tử đầu tiên của mảng thỏa mãn điều kiện cho trước
+      2. some(): kiểm tra xem một số phần tử của mảng có thỏa mãn điều kiện cho trước không
+      3. every(): kiểm tra liệu tất cả các phần tử mảng có thỏa mãn điều kiện cho trước?
+      4. filter(): trả về mảng mới chứa các phần tử thỏa mãn điều kiện cho trước
+      5. map(): trả về mảng mới từ mảng đã có
+      6. forEach(): duyệt từng phần tử mảng bằng cách gọi hàm cho từng phần tử của mảng
+    */
+
+    var friends = ["Hoang", "Dong", "Nhung", "Hoa", "Trung", "Khoa"];
+
+    var numbers = [18, 12, 99, 43, 11, 89, 400, 9, 5, 27, 64, 100];
+
+    var names = "";
+    // friends.forEach(getName);
+
+    // function getName(value, index, arr) {
+    //   names += value + "<br>";
+    // }
+
+    // var numbers2 = numbers.map(double);
+
+    // function double(value, index, arr) {
+    //   return value * 5;
+    // }
+
+    // var res = friends.find(nameAfterN);
+
+    // function nameAfterN(value, index, arr) {
+    //   return value >= "N";
+    // }
+
+    // var indexOfGreaterThan80 = numbers.findIndex(findNumberIndex);
+
+    // function findNumberIndex(value) {
+    //   return value > 80;
+    // }
+
+    // var result = numbers.every(greaterThan10);
+
+    var newNumbers = numbers.filter(greaterOrEqual100);
+
+    function greaterThan50(value) {
+      return value > 50;
+    }
+
+    function greaterOrEqual100(value) {
+      return value >= 100;
+    }
+
+    document.getElementById("demo").innerHTML = newNumbers;
+
+  </script>
+</body>
+</html>
