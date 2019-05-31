@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Bài 24 Sinh số ngẫu nhiên</title>
+</head>
+<body>
+  <p id="demo"></p>
+  <script type="text/javascript">
+  	
+    function getRandNumber(from, to) {
+      return Math.floor(Math.random() * (to - from)) + from + 1;
+    }
+
+    document.getElementById("demo").innerHTML = getRandNumber(1, 9999);
+
+  </script>
+</body>
+</html>

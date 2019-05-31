@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Bài 26 Lệnh if-else</title>
+</head>
+<body>
+  <p id="demo"></p>
+  <script type="text/javascript">
+
+    // if(conditions) {
+    //   // do something
+    // }
+
+    // if(conditions) {
+    //   // do something
+    // } else {
+    //   // do other things
+    // }
+
+    // if(condition1) {
+    //   // do something
+    // } else if(condition2) {
+    //   // do other things
+    // } else if(condition3) {
+    //   // do something
+    // } else {
+    //   // do other things
+    // }
+    
+    var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 25, 50, 100, 99];
+
+    var oddNumbers = numbers.filter(findOdd);
+
+    function findOdd(value) {
+      if(value % 2 == 0) {
+        return false;
+      } else {
+        return true;
+      }
+    }
+
+    var mark = 7.25;
+
+    var result = "";
+
+    if(mark >= 4) {
+      result = "Pass!";
+    } else {
+      result = "Failed!";
+    }
+
+    var m = "Hello and welcome to JavaScript Course!";
+
+    function shouldShowMessage(msg) {
+      if(msg.length >= 10) {
+        return msg;
+      }
+      return "";
+    }
+
+    document.getElementById("demo").innerHTML = shouldShowMessage(m);
+
+  </script>
+</body>
+</html>

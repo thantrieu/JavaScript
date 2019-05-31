@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Bài 27 Cấu trúc switch</title>
+</head>
+<body>
+  <p id="demo"></p>
+    <script type="text/javascript">
+    // Monday,  Tuesday,  Wednesday, Thursday,  Friday, Saturday, Sunday
+    // January, February, March, May, June, July, August, September, October, November, December
+    var date = new Date(2025, 1, 10);
+    var month = date.getMonth(); // start from 0 == January
+    var day = date.getDay(); // start from 0 == Monday
+    var txtMonth = "";
+    var txtDayOfWeek = "";
+
+    switch(day) {
+      case 0: 
+        txtDayOfWeek = "Monday";
+        break;
+
+      case 1:
+        txtDayOfWeek = "Tuesday";
+        break;
+
+      case 2:
+        txtDayOfWeek = "Wednesday";
+        break;
+
+      case 3:
+        txtDayOfWeek = "Thursday";
+        break;
+
+      case 4:
+        txtDayOfWeek = "Friday";
+        break;
+
+      case 5:
+        txtDayOfWeek = "Saturday";
+        break;
+
+      case 6:
+        txtDayOfWeek = "Sunday";
+        break;
+
+      default:
+        txtDayOfWeek = "Not available!";
+    }
+
+
+
+    document.getElementById("demo").innerHTML = txtDayOfWeek;
+
+  </script>
+</body>
+</html>
