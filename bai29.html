@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Bài 29: Vòng lặp while</title>
+</head>
+<body>
+  <p id="demo"></p>
+  <script type="text/javascript">
+
+    // Tổng quát: 
+    // while(điều_kiện_lặp) {
+    //   // Nội dung cần lặp
+    // }
+
+    // // Với do-while:
+
+    // do {
+    //   // Nội dung lặp
+    // } while(điều_kiện_lặp);
+
+    var friends = ["Hoang", "Dong", "Nhung", "Hoa", "Trung", "Khoa"];
+
+    var numbers = [18, 12, -99, 43, 11, 89, 400, 9, 5, 27, 64, 100];
+
+    var objects = [
+      {name: "Than", age: 27},
+      {name: "Anh", age: 21},
+      {name: "Hoang", age: 20},
+      {name: "Binh", age: 29},
+      {name: "Quy", age: 26},
+      {name: "Linh", age: 30},
+    ];
+
+    var person = {
+      firstName: "Than",
+      lastName: "Trieu",
+      age: 25,
+      address: "Ha Noi",
+      fullName: function(){
+        return this.firstName + " " + this.lastName;
+      }
+    }
+
+    var txtFriends = "";
+    var txtNumbers = "";
+
+    var i = 0;
+    do {
+      numbers[i] /= 3;
+      txtNumbers += numbers[i] + "<br>";
+      i++;
+    } while(i >= numbers.length);
+
+    document.getElementById("demo").innerHTML = txtNumbers;
+
+    var txtObjects = "";
+
+    // for(var i = 0; i < objects.length; i++) {
+    //   txtObjects += objects[i].name + ", " + objects[i].age + "<br>";
+    // }
+
+    // var txtPersonProperties = "";
+
+    // for(p in person) {
+    //   txtPersonProperties += p + ": " + person[p] + "<br>";
+    // }
+
+    // // // person.firstName = ...
+
+    // document.getElementById("demo").innerHTML = txtPersonProperties;
+
+  </script>
+</body>
+</html>
