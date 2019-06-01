@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Bài 33: Date methods</title>
+</head>
+<body>
+  <p id="demo"></p>
+  <script type="text/javascript">
+    // Các phương thức set: 
+ 	// setDate()			thiết lập ngày (1-31)
+	// setFullYear()		thiết lập năm (tùy chọn tháng và ngày)
+	// setHours()			thiết lập giờ (0-23)
+	// setMilliseconds()	thiết lập mili giây (0-999)
+	// setMinutes()			thiết lập phút (0-59)
+	// setMonth()			thiết lập tháng (0-11)
+	// setSeconds()			thiết lập giây (0-59)
+	// setTime()			thiết lập thời gian (milliseconds từ ngày 1/1/1970)
+
+    var now  = new Date();
+    now.setTime(86400*1000 * 1000000);
+
+    document.getElementById("demo").innerHTML = now;
+
+  </script>
+</body>
+</html>

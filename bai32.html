@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Bài 32: Date methods</title>
+</head>
+<body>
+  <p id="demo"></p>
+  <script type="text/javascript">
+    // Các phương thức get: 
+    // getFullYear() :lấy năm ở dạng 4 chữ số, ví dụ 2020
+    // getMonth()     lấy tháng trong năm (0-11)
+    // getDate()      lấy ngày trong tháng (1-31)
+    // getHours()     lấy giờ (0-23)
+    // getMinutes()   lấy phút (0-59)
+    // getSeconds()   lấy giây (0-59)
+    // getMilliseconds() lấy millisecond (0-999)
+    // getTime()      lấy milliseconds (milliseconds từ 1/1/1970)
+    // getDay()       lấy ngày trong tuần (0-6)
+    // Date.now()     lấy thời gian theo chuẩn ECMAScript 5.
+
+    var now  = new Date(1559378729043);
+
+    document.getElementById("demo").innerHTML = now.getUTCFullYear();
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Bài 30: Lệnh break, continue</title>
+</head>
+<body>
+  <p id="demo"></p>
+  <script type="text/javascript">
+    // break: thoát khỏi vòng lặp
+    // continue: bỏ qua một lần lặp
+
+    var friends = ["Hoang", "Dong", "Nhung", "Hoa", "Trung", "Khoa"];
+
+    var numbers = [18, 12, -99, 43, 11, 89, 400, 9, 5, 27, 64, 100];
+
+    var txtFriends = "";
+    var txtNumbers = "";
+
+    for(var i = 0; i < numbers.length; i++) {
+      if(numbers[i] % 5 != 0){ // bỏ qua
+        continue;
+      }
+      txtNumbers += numbers[i] + ", index = " + i + "<br>";
+    }
+
+    // for(var i = 0; i < numbers.length; i++) {
+    //   numbers[i] *= 9;
+    //   txtNumbers += numbers[i] + "<br>";
+    // }
+
+    document.getElementById("demo").innerHTML = txtNumbers;
+
+  </script>
+</body>
+</html>
