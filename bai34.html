@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Bài 34: Định dạng thời gian</title>
+</head>
+<body>
+  <p id="demo"></p>
+  <script type="text/javascript">
+    // Các định dạng thời gian (string)
+    // 2020-08-09, YYYY-MM-DD
+    // 09/15/2021: MM/DD/YYYY
+    // Oct 10 2023 or 20 Dec 2024 or December 20 2024 or December, 20, 2024
+    // Date.parse(): chuyển một string date hợp lệ sang mili giây
+
+    // var now  = new Date("2020-02-31T05:20:30-08:00");
+
+    // var now  = new Date("04/23/2024");
+
+    // var now  = new Date("January, 20, 2024");
+
+    document.getElementById("demo").innerHTML = Date.parse("Dec, 31, 2024");
+
+  </script>
+</body>
+</html>
