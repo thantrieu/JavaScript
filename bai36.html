@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Bài 36: Regular expressions</title>
+</head>
+<body>
+  <script type="text/javascript">
+  	- Là biểu thức quy ước định dạng của một mẫu kí tự cần tìm kiếm
+  	- Thường sử dụng khi cần tìm kiếm, thay thế và so khớp dữ liệu đầu vào, đầu ra.
+  	- Cú pháp tổng quát: /mẫu_quy_ước/cách_thức_so_khớp;
+  		Trong đó cách thức so khớp thường là i, g, m
+  	- Các phương thức thường sử dụng bao gồm: 
+  		+ match()	: []
+  		+ replace()	: string
+  		+ split()	: []
+  		+ search()	: boolean
+  		+ exec()	: []
+  		+ test()	: boolean
+
+  	var numbers = "2019 2018 2017 2016 2015 2014 2013 2012 2011";
+  	var fruits = "Apple, Mango, Pineapple, Orange, Lemond, Banana, Water melon";
+  	var brands = "Apple, Google, Microsoft, Huawei, Cisco, Amazon, Samsung, Xiaomi";
+  	var phoneNumber = "098-808-4884";
+    var reg = /20\d{2}/g;
+    var reg2 = /\^d{3}\-\d{3}\-\d{4}$/;
+
+    console.log(reg2.exec(phoneNumber));
+
+  </script>
+</body>
+</html>
