@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Bài 38: Regular expressions in use</title>
+</head>
+<body>
+  <script type="text/javascript">
+  	// - Là biểu thức quy ước định dạng của một mẫu kí tự cần tìm kiếm
+  	// - Thường sử dụng khi cần tìm kiếm, thay thế và so khớp dữ liệu đầu vào, đầu ra.
+  	// - Cú pháp tổng quát: /mẫu_quy_ước/cách_thức_so_khớp;
+  	// 	Trong đó cách thức so khớp thường là i, g, m
+  	// - Các phương thức thường sử dụng bao gồm: 
+  	// 	+ match()	: []
+  	// 	+ replace()	: string
+  	// 	+ split()	: []
+  	// 	+ search()	: boolean
+  	// 	+ exec()	: []
+  	// 	+ test()	: boolean
+
+  	var email = "trieuthan92@hot.com";
+
+    var otherEmail = "tranttn@gmail.com";
+
+  	var phoneNumber = "098-808-4884";
+
+    var reg = /^\w+@[a-zA-Z]{3,}\.com$/i;
+
+    var phoneNumberPattern = /^\d{3}[-\s]?\d{3}[-\s]?\d{4}$/;
+
+    console.log(phoneNumberPattern.test(phoneNumber));
+
+  </script>
+</body>
+</html>
