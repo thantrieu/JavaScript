@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Bài 39: Variable scope</title>
+</head>
+<body>
+  <script type="text/javascript">
+    // Phạm vi sử dụng của một biến
+  	// Biến toàn cục: biến khai báo và sử dụng bên ngoài tất cả các hàm, các object, khối
+    // biến cục bộ: tham số, các biến khai báo và sử dụng trong một hàm, khối, một object
+
+    var x = 100;
+    var y = 0, z = 0;
+    function f(t, w, q) { 
+      var y = 200;
+      var z = x + y;
+    }
+
+    console.log(x);
+
+    f();
+    y += 255;
+    z /= y;
+
+    console.log(window.y);
+    console.log(window.z);
+
+  </script>
+</body>
+</html>

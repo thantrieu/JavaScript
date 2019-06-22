@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Bài 40: Exception Handling</title>
+</head>
+<body>
+  <p>Enter a number from 1 to 100, then click the button</p>
+  <input id="input" type="text" name="mtext">
+  <button type="button" name="mbuton" onclick="handleError()">Check error</button> 
+  <p id="err"></p>
+
+  <script type="text/javascript">
+
+    function handleError(){
+      var input = document.getElementById('input').value;
+      try {
+        if(input == '') {
+          throw "Input is empty, try again!";
+        }
+        if(isNaN(input)) {
+          throw "Not a number, try again!";
+        }
+        var number = Number(input);
+        if(number < 1) {
+          throw "Too low, try again!";
+        } 
+        if(number > 100) {
+          throw "Too height, try again!";
+        }
+        document.getElementById('err').innerHTML = 'Congratulation, your number is: ' + input;
+      } catch(err) {
+        document.getElementById('err').innerHTML = err;
+      }
+    }
+
+  </script>
+</body>
+</html>
