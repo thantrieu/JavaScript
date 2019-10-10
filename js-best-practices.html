@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript Best Practices</title>
+</head>
+<body>
+	<script type="text/javascript">
+		/*
+			Thói quen tốt trong sử dụng JavaScript
+			1. tránh sử dụng các biến toàn cục
+			2. luôn khai báo biến local khi có nhu cầu sử dụng biến trong hàm
+			3. luôn khai báo biến ở đầu
+			4. khởi tạo giá trị cho biến khi khai báo
+			5. không new các object, thay vào đó hãy dùng {}, [], 0, '', true, function(){}, /()/
+			6. luôn sử dụng === để so sánh
+			7. sử dụng tham số mặc định 
+			8. kết thúc cấu trúc switch với default
+			9. lưu ý về kiểu trong Js
+
+		*/
+
+		function f(p1 = 0, p2 = 100, p3 = false) {
+			var a = 0, b = {};
+			let c = false;
+			// ...
+		}
+
+		f(10, 20);
+
+		var x = '100'; // new String(..);
+		var t = 10; // new Number(10);
+		var v;
+		t + v;
+
+		var g = 100;
+		switch(g) {
+			case 0:
+				break;
+			// ...
+			default:
+			  break;
+
+		}
+	</script>
+</body>
+</html>

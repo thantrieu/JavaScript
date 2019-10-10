@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>class trong JS</title>
+</head>
+<body>
+	<script type="text/javascript">
+
+		// class trong JavaScript
+
+
+		class Cat {
+			constructor(name, age, address) {
+				this.name = name;
+				this.address = address;
+				this.age = age;
+			}
+
+			speak() {
+				return this.name + ' roars';
+			}
+
+			set color(c) {
+				this.eyeColor = c;
+			}
+
+			get catInfo() {
+				return this.name + ' ' + this.age + ', ' + this.address;
+			}
+
+			static move() {
+				return 'Cat is moving';
+			}
+		}
+		
+		var X = class Student {
+			constructor(name, address, fee, avg) {
+				this.name = name;
+				this.address = address;
+				this.fee = fee;
+				this.avg;
+			}
+
+			study(subject) {
+				return this.name + ' studies ' + subject;
+			}
+		}
+
+		class Fish {
+
+		}
+
+		var tom = new Cat('Tom', 3, 'Hanoi');
+		var hung = new X('Tran Van Hung', 'Hanoi', 20, 3.25);
+
+		console.log(Cat.move());
+		console.log(hung.study('Math'));
+	</script>
+</body>
+</html>
